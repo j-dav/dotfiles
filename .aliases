@@ -1,0 +1,49 @@
+# ---------------------------------
+# Common aliases
+# ---------------------------------
+
+alias home='cd ~'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias '?=man'
+alias ls='ls -A'
+alias ps-grep='ps aux | grep'
+alias zshconfig='open ~/.zshrc'
+alias love="/Applications/love.app/Contents/MacOS/love"
+
+# ---------------------------------
+# Git specific aliases
+# ---------------------------------
+
+alias g='git'
+alias gp='git push'
+alias gpull='git pull'
+alias gc='git commit'
+
+# ---------------------------------
+# NPM and Yarn
+# ---------------------------------
+
+alias nr='npm run'
+alias ni='npm install'
+alias nid='npm install -D'
+alias nip='npm install --only=prod'
+
+alias ys='yarn start'
+alias ya='yarn add'
+alias yb='yarn build'
+
+# ---------------------------------
+# Python virtual env aliases
+# ---------------------------------
+
+# Create a virtualenv with python3 as the interpreter
+# I usually name my virtualenv .venv
+alias venv="virtualenv -p $( which python3 ) .venv"
+alias vac='source .venv/bin/activate'
+
+# This should be the last line of the file
+# For local changes
+# Don't make edits below this
+[ -f ".aliases.local" ] && source ".aliases.local"
