@@ -20,6 +20,7 @@ alias g='git'
 alias gp='git push'
 alias gpull='git pull'
 alias gc='git commit'
+alias gpsup='git push --set-upstream origin $(git_current_branch)'
 
 # ---------------------------------
 # NPM and Yarn
